@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.android.canvsdemo"
+        minSdkVersion 21
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:21.0.3'
+    //compile 'com.android.support:support-v4:22.0.0'
+
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'com.github.orangegangsters:library:1.2.1@aar'
+    compile 'com.sothree.slidinguppanel:library:3.0.0'
+    compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
+    compile 'com.rengwuxian.materialedittext:library:2.0.3'
+    compile 'com.ogaclejapan.arclayout:library:1.0.0@aar'
+    compile 'com.github.LukeDeighton:WheelView:4f9b3b9411'
+    //Core
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.0.1'
+
+    //Optional for built-in cards
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.0.1'
+
+    //Optional for RecyclerView
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.0.1'
+
+    //Optional for staggered grid view
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.0.1'
+
+    //Optional for drag and drop
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.0.1'
+
+
+    //compile 'com.github.ogaclejapan:SmartTabLayout:1.1.1'
+
+
+    // this fails build: compile 'com.github.marvinlabs:android-floatinglabel-widgets:1.6.1'
+
+}
